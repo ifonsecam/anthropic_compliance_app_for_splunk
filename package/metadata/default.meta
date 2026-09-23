@@ -20,17 +20,8 @@ export = system
 [savedsearches]
 export = system
 
-[eventtypes]
-export = system
-
 [tags]
 export = system
 
-[props]
-export = system
-
 [macros]
-export = system
-
-[collections]
 export = system

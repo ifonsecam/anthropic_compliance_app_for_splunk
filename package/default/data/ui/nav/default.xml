@@ -1,7 +1,5 @@
 <?xml version="1.0" ?>
 <nav color="#CC785C">
-    <view name="inputs"/>
-    <view name="configuration"/>
     <collection label="Claude Enterprise">
         <view name="claude_security_audit"/>
         <view name="claude_ai_governance"/>
