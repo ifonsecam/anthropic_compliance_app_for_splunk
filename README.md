@@ -1,7 +1,6 @@
-# Anthropic Claude Enterprise Add-on for Splunk
+# Anthropic Claude Enterprise App for Splunk
 
-Ingest audit, usage, cost, and spend-limit data from an Anthropic Claude
-Enterprise organization into Splunk — with dashboards for **security
+Dashboards for **security
 auditing**, **governance**, and **usage & spend analytics (tokenomics)**,
 CIM-normalized events, and ready-made detections.
 
@@ -11,10 +10,6 @@ CIM-normalized events, and ready-made detections.
 | Governance | Directory users/groups roster, invitations, project/chat/artifact activity, agent lifecycle |
 | Usage & Spend | DAU/WAU/adoption, token mix & cache hit rate, blended cost per 1M tokens, spend by product/model, top users, spend-vs-limit utilization |
 
-Data is collected from Anthropic's **Compliance API** (audit feed,
-directory, content export), **Enterprise Analytics API** (usage, cost,
-per-user reports), and **Admin API** (spend limits, directory fallback)
-using scoped enterprise API keys stored encrypted in Splunk.
 
 > [!NOTE]
 > :bookmark: Discover more on monitoring and governing enterprise AI platform in our [new blog post](https://lantern.splunk.com/Security_Use_Cases/Compliance/Monitoring_and_governing_enterprise_AI_platforms#) on Splunk Lantern.
