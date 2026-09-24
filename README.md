@@ -10,9 +10,11 @@ CIM-normalized events, and ready-made detections.
 | Governance | Directory users/groups roster, invitations, project/chat/artifact activity, agent lifecycle |
 | Usage & Spend | DAU/WAU/adoption, token mix & cache hit rate, blended cost per 1M tokens, spend by product/model, top users, spend-vs-limit utilization |
 
+This app requires the [Anthropic Claude Enterprise Add-on for Splunk](https://github.com/splunk-platform-apps/anthropic_claude_enterprise_add-on_for_splunk) to be installed for full functionality.
 
 > [!NOTE]
 > :bookmark: Discover more on monitoring and governing enterprise AI platform in our [new blog post](https://lantern.splunk.com/Security_Use_Cases/Compliance/Monitoring_and_governing_enterprise_AI_platforms#) on Splunk Lantern.
+
 
 ## Getting Started
 
