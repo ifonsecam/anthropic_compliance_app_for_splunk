@@ -10,11 +10,9 @@ CIM-normalized events, and ready-made detections.
 | Governance | Directory users/groups roster, invitations, project/chat/artifact activity, agent lifecycle |
 | Usage & Spend | DAU/WAU/adoption, token mix & cache hit rate, blended cost per 1M tokens, spend by product/model, top users, spend-vs-limit utilization |
 
-This app requires the [Anthropic Claude Enterprise Add-on for Splunk](https://github.com/splunk-platform-apps/anthropic_claude_enterprise_add-on_for_splunk) to be installed for full functionality.
-
-> [!NOTE]
-> :bookmark: Discover more on monitoring and governing enterprise AI platform in our [new blog post](https://lantern.splunk.com/Security_Use_Cases/Compliance/Monitoring_and_governing_enterprise_AI_platforms#) on Splunk Lantern.
-
+> [!IMPORTANT]
+> The Anthropic Claude Enterprise App for Splunk provides dashboards for Anthropic Claude Enterprise data retrieved using the following Add-on:
+> [Anthropic Claude Enterprise Add-on for Splunk](https://github.com/splunk-platform-apps/anthropic_claude_enterprise_add-on_for_splunk). Download and install it as per [documentation](https://splunk-platform-apps.github.io/anthropic_claude_enterprise_add-on_for_splunk/) to guarantee full functionality of the Anthropic Claude Enterprise App for Splunk.
 
 ## Getting Started
 
@@ -22,7 +20,7 @@ To install and run this app, download the latest compiled application directly f
 
 :package: [Download the latest release here](https://github.com/splunk-platform-apps/anthropic_compliance_app_for_splunk/releases)
 
-Once downloaded, installation instructions can be found in the provided [documentation](https://splunk-platform-apps.github.io/anthropic_compliance_app_for_splunk/)
+Once downloaded, installation instructions can be found in the provided [documentation](https://splunk-platform-apps.github.io/anthropic_compliance_app_for_splunk/).
 
 ## Useful Links
 
@@ -32,3 +30,5 @@ Once downloaded, installation instructions can be found in the provided [documen
 
 :gear: [Development Guidelines](https://github.com/splunk-platform-apps/.github/blob/main/documentation/DEV_GUIDELINES.md#getting-started)<br/>
 :heart_on_fire: [Contributing Guidelines](https://github.com/splunk-platform-apps/.github/blob/main/.github/CONTRIBUTING.md)
+
+:mega: Discover more on monitoring and governing enterprise AI platform in our [new blog post](https://lantern.splunk.com/Security_Use_Cases/Compliance/Monitoring_and_governing_enterprise_AI_platforms#) on Splunk Lantern.
