@@ -4,20 +4,19 @@ The Anthropic Claude Enterprise App for Splunk provides dashboards for **securit
 
 ## Features
 
-- **Set of Dashboards** to easily visualize and gain insights into your Anthropic Claude Enterprise data:
-  - **Security Audit** — Access failures (e.g., `claude_chat_access_failed`), admin/org changes (API keys, roles, spend limits, integrations), data exports, file activity, artifact publishing/sharing exposure, user activity by IP with multi-IP anomaly detection, and auditing of who reads your compliance data via the API.
-  - **Governance** — Directory users/groups roster, invitations, project/conversation/artifact activity, agent lifecycle. Panels that depend on optional inputs hide themselves until data exists.
-  - **Usage & Spend Analytics** — DAU/WAU/stickiness, adoption rate, token mix (output / uncached input / cache read / cache creation), prompt-cache hit rate, blended cost per 1M tokens, spend by product and model, top users by cost/tokens, spend-vs-limit utilization, pending limit requests, Claude Code tool acceptance, and connector usage.
+**Set of Dashboards** to easily visualize and gain insights into your Anthropic Claude Enterprise data:
+- **Security Audit** — Access failures (e.g., `claude_chat_access_failed`), admin/org changes (API keys, roles, spend limits, integrations), data exports, file activity, artifact publishing/sharing exposure, user activity by IP with multi-IP anomaly detection, and auditing of who reads your compliance data via the API.
+- **Governance** — Directory users/groups roster, invitations, project/conversation/artifact activity, agent lifecycle. Panels that depend on optional inputs hide themselves until data exists.
+- **Usage & Spend Analytics** — DAU/WAU/stickiness, adoption rate, token mix (output / uncached input / cache read / cache creation), prompt-cache hit rate, blended cost per 1M tokens, spend by product and model, top users by cost/tokens, spend-vs-limit utilization, pending limit requests, Claude Code tool acceptance, and connector usage.
 
 ## Getting Started
 
 ### Requirements
 
-- **Splunk** Enterprise 9.x/10.x or Splunk Cloud Platform.
-
+- **Splunk** Enterprise or Splunk Cloud Platform 9.x/10.x,
 - **Anthropic Claude Enterprise Add-on for Splunk**:
-   - This app depends on the **Anthropic Claude Enterprise Add-on for Splunk** to ingest data from Anthropic Claude Enterprise APIs.
-   - Ensure the add-on is installed and configured to collect the required data.
+   - The Anthropic Claude Enterprise App for Splunk expects data to be retrieved from the Anthropic Claude Enterprise APIs using the **Anthropic Claude Enterprise Add-on for Splunk**.
+   - Ensure such add-on is installed and configured to collect the required data as per [documentation](https://github.com/splunk-platform-apps/anthropic_claude_enterprise_add-on_for_splunk).
 
 ### Installation
 
@@ -35,10 +34,11 @@ Where to install:
 | Indexers | No | Not applicable |
 | Universal forwarder | No | Not applicable |
 
-
 ### Configuration
 
-- **Scope the search macro in the Search Head** — Update the `claude_index` macro to point to the appropriate index where the data is stored. This can be done via **Settings → Advanced search → Search macros**. Every dashboard and saved search reads through this macro.
+Splunk Admins are requested to:
+- Create a dedicated index on the Search head to collect your events, if not done yet (e.g. `claude`).
+  - **Scope the search macro in the Search Head** — Update the `claude_index` macro to point to the appropriate index where the data is stored. This can be done via **Settings → Advanced search → Search macros**. Every dashboard and saved search reads through this macro.
 
 ### Usage
 
@@ -72,9 +72,7 @@ All dashboards default to **Last 24 hours** and include a **user filter**.
 
 ## Versions Supported
 
-Tested against Splunk Enterprise 9.3 and 10.0 (automated install tests),
-with AppInspect passing on the `cloud`, `private_victoria`, and
-`private_classic` tag sets.
+Tested against Splunk Enterprise 9.3 and 10.0 (automated install tests).
 
 ## Contributing
 
